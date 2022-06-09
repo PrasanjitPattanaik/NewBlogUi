@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiBaseUrl: 'https://localhost:7113',
+  //apiBaseUrl: 'https://localhost:7126'
+  emailBaseUrl: 'https://v1.nocodeapi.com/prasanjit/zohomail/GjWJlwRJJzzyDkKG/sendEmail?fromAddress=chubbblog@prasanjitpattanaik.com&'
 };
 
 /*

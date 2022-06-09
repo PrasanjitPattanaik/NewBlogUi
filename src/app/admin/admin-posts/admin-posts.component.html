@@ -1,0 +1,29 @@
+<div class="container">
+    <div style="display: flex-box;">
+        <div>
+            <h1>All Blog Posts</h1>
+        </div>
+        <div style="float:right;">
+            <button class="btn btn-danger" style="float:right;" (click)="Logout()">Log Out</button>
+        </div>
+    </div>
+    
+    <table class="table">
+        <thead>
+            <tr>
+            <th>Title</th>
+            <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let post of posts">
+            <td>{{post.title}}</td>
+            <td>
+                <a [routerLink]="['/admin/posts', post.id]">View</a>
+            </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
+
